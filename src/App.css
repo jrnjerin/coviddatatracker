@@ -1,0 +1,48 @@
+.app {
+    height: 100vh;
+    color: #6a5d5d;
+    width: 100vw;
+}
+
+.app td {
+    padding: 10px;
+    border: 1px solid lightblue;
+    width: 80px;
+    border-collapse: collapse;
+}
+
+.app .td__SLNO {
+    padding: 10px;
+    border: 1px solid lightblue;
+    width: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.app .td__country {
+    padding: 10px;
+    border: 1px solid lightblue;
+    width: 100px;
+    border-collapse: collapse;
+}
+
+.app tr:nth-of-type(odd) {
+    background-color: lightblue;
+}
+
+.app .table__header {
+    background-color: red;
+}
+
+.app .table__worldwide {
+    background-color: black;
+    color: white;
+}
+
+.app h1 {
+    cursor: pointer;
+}
+
+.app .td__numeric {
+    text-align: right;
+}
