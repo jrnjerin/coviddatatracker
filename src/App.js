@@ -129,8 +129,8 @@ function App() {
                 <td className="td__numeric">{numeral(active).format('0,0')}</td>
                 <td className="td__numeric">{numeral(todayCases).format('0,0')}</td>
                 <td className="td__numeric">{numeral(deaths).format('0,0')}</td>
-                <td className="td__numeric">{numeral(critical).format('0,0')}</td>
                 <td className="td__numeric">{numeral(todayDeaths).format('0,0')}</td>
+                <td className="td__numeric">{numeral(critical).format('0,0')}</td>
                 <td className="td__numeric">{numeral(recovered).format('0,0')}</td>
                 <td className="td__numeric">{numeral(todayRecovered).format('0,0')}</td>
                 <td className="td__numeric">{numeral(casesPerOneMillion).format('0,0')}</td>
