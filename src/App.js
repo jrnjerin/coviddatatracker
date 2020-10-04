@@ -23,56 +23,56 @@ function App() {
   }, [])
 
   const total = (type) => {
-    if (type == "cases") {
+    if (type === "cases") {
       const cases_list = countries.map(cnt => {
         return cnt.cases;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
-    } else if (type == "active") {
+    } else if (type === "active") {
       const cases_list = countries.map(cnt => {
         return cnt.active;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
-    } else if (type == "todayCases") {
+    } else if (type === "todayCases") {
       const cases_list = countries.map(cnt => {
         return cnt.todayCases;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
-    } else if (type == "deaths") {
+    } else if (type === "deaths") {
       const cases_list = countries.map(cnt => {
         return cnt.deaths;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
-    } else if (type == "todayDeaths") {
+    } else if (type === "todayDeaths") {
       const cases_list = countries.map(cnt => {
         return cnt.todayDeaths;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
-    } else if (type == "critical") {
+    } else if (type === "critical") {
       const cases_list = countries.map(cnt => {
         return cnt.critical;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
     }
-    else if (type == "recovered") {
+    else if (type === "recovered") {
       const cases_list = countries.map(cnt => {
         return cnt.recovered;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
     }
-    else if (type == "todayRecovered") {
+    else if (type === "todayRecovered") {
       const cases_list = countries.map(cnt => {
         return cnt.todayRecovered;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
     }
-    else if (type == "tests") {
+    else if (type === "tests") {
       const cases_list = countries.map(cnt => {
         return cnt.tests;
       });
       return cases_list && cases_list.length > 0 ? cases_list.reduce((result, number) => result + number) : 0;
     }
-    else if (type == "population") {
+    else if (type === "population") {
       const cases_list = countries.map(cnt => {
         return cnt.population;
       });
